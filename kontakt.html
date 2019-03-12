@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="Images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Sinan Šubara | Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="loading.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js"></script>
+    <script src="validacija.js"></script>
+
+</head>
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
+        <div id="divfather">
+                <div id="load" style="top: 20%;">
+                    <div style="font-size: 45px;">G</div>
+                    <div style="font-size: 45px;">N</div>
+                    <div style="font-size: 45px;">I</div>
+                    <div style="font-size: 45px;">D</div>
+                    <div style="font-size: 45px;">A</div>
+                    <div style="font-size: 45px;">O</div>
+                    <div style="font-size: 45px;">L</div>
+              </div>
+            </div>
+    <div id="container">
+        <header class="header transparent">
+
+			<div id="inner-header" class="inner-header max-width group">
+
+				<ul class="utility">
+					<li><a href="https://www.instagram.com/subarasinan" title="Instagram" target="_blank"><span class="icon instagram fab fa-instagram"></span></a></li>
+					<li><a href="https://www.facebook.com/sinansubara" title="Facebook" target="_blank"><span class="icon facebook fab fa-facebook"></span></a></li>
+					<li><a href="https://www.linkedin.com/in/sinan-%C5%A1ubara-11a217128/" title="LinkedIn" target="_blank"><span class="icon linkdin fab fa-linkedin"></span></a></li>
+					<li><a href="https://www.twitter.com/_bosancheros" title="Twitter" target="_blank"><span class="icon twitter fab fa-twitter"></span></a></li>
+				</ul>
+
+				<div class="icon logo"><img src="Images/logoss.png" alt="Sinan Šubara" height="100px" width="150px"></div>
+
+				<nav>
+					<ul class="nav">
+                        <li><a href="index.html" class="animLink">Početna</a></li>
+						<li><a href="omeni.html" class="animLink">Biografija</a></li>
+                        <li><a href="slike.html" class="animLink">Slike</a></li>
+						<li><a href="kontakt.html" class="animLink">Kontakt</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+        <style>
+            
+            .parallax {
+                        position: relative;
+                        opacity: 0.65;
+                        background-attachment: fixed;
+                        background-position: 50% 24%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    
+                    .bgimg-2 {
+                        background-image: url("Images/danilo.jpg");
+                        min-height: 900px;
+                        opacity: 0.9;
+                    }
+                    .caption {
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                width: 100%;
+                                text-align: center;
+                                color: #000;
+                            }
+
+                    .caption span.border {
+                                background-color: #111;
+                                color: #5d5d5d;
+                                padding: 18px;
+                                font-size: 25px;
+                                letter-spacing: 10px;
+                                box-shadow: 1px 6px 24px 2px gray;
+                                cursor: pointer;
+                            }
+            </style>
+                        <div class="bgimg-2 parallax"></div>
+                        <div class="boxshadow bgimg-1" id="kontaktform" style="color: #777;background-color:white;padding:60px 310px 50px 310px;">
+                            <h3 style="text-align:center; margin-bottom: 100px; font-size:50px; text-align: center;">Kontakt</h3>
+                            <p style="text-align: center;margin-bottom: 70px;"><strong style="font-family: roboto;font-size: 17px;">Unesite svoje podatke ispravno, ako želite odgovor na vašu poruku ili pitanje!</strong><br>Napišite bilo kakvu poruku Sinanu, ili možda upitajte ga nešto.<br>Sinan će probati da odgovori na sve vaše poruke.<br>A dok čekate odgovor možete ga pronaći na jednoj od brojnih socijalnih mreža.<br>Neke su navedene na kraju stranice.</p>
+                            <form id="Forma" method="POST" style="border-top: 1px solid black;padding: 60px; margin-bottom: 70px;">
+                                <div id="form-wrapper">
+                                    <p>
+                                        <label for="username" id="labelusername">Ime i prezime</label><br>
+                                        <input type="text" onblur="ValidirajIP()" id="username" name="username" required/>
+                                    </p>
+                                    <p>
+                                        <label for="email" id="labelemail" >Email</label><br>
+                                        <input type="email" id="email" name="email" required/>
+                                    </p>
+                                    <p>
+                                            <label for="message" id="labelarea" >Poruka</label><br>
+                                            <textarea id="message" class="messagearea"></textarea>
+                                    </p>
+                                    <input type="submit" class="form-button" id="save" value="Pošalji poruku" onclick="" />  
+                                    <input type="reset" class="form-button" id="reset" value="Očisti formu">
+                                </div>        
+                                </form>
+                          </div>
+                      
+                    
+                    
+    </div>
+    
+    <footer class="footer aos-init" data-aos="fade-up" itemscope="" style="border-top: 1px black solid;">
+
+        <div id="inner-footer" class="max-width inner-footer group">
+
+            <div class="ball home-header" title="Vrati na početak"><span class="icon fas fa-arrow-circle-up" style="color:#fff; font-size: 70px;position: absolute;margin-left: 14px;margin-top: 12px;"></span></div>
+            <div class="stay-gold textshadow-footer"><span class="line"></span>SEMINARSKI RAD</div>
+            <div class="footer-nav">
+                <div class="left group" style="margin-top: 8px;">
+                    <ul class="nostyle inline">
+                            <li><a href="index.html" class="animLink textshadow-footer">Početna</a></li>
+                            <li><a href="omeni.html" class="animLink textshadow-footer">Biografija</a></li>
+                            <li><a href="slike.html" class="animLink textshadow-footer">Slike</a></li>
+                            <li><a href="kontakt.html" class="animLink textshadow-footer">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="right group" style="margin-right: 50px;">
+                    <ul class="nostyle inline">
+                            <li><a href="https://www.instagram.com/subarasinan" title="Instagram" target="_blank"><span class="icon instagram fab fa-instagram"></span></a></li>
+                            <li><a href="https://www.facebook.com/sinansubara" title="Facebook" target="_blank"><span class="icon facebook fab fa-facebook"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/sinan-%C5%A1ubara-11a217128/" title="LinkedIn" target="_blank"><span class="icon linkdin fab fa-linkedin"></span></a></li>
+                            <li><a href="https://www.twitter.com/_bosancheros" title="Twitter" target="_blank"><span class="icon twitter fab fa-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="icon logo-footer"><img title="Početna stranica" src="Images/logoss.png" alt="Sinan Šubara" height="233px" width="350px" onclick="location.href='index.html';" style="cursor: pointer;"></span>
+            <div class="credit textshadow-footer">Copyright © 2018 Sinan Šubara</div>
+
+        </div>
+
+    </footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    	<script src="main.js"></script>
+</body>
+</html>

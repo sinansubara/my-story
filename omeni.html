@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="Images/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Sinan Šubara | Biografija</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="loading.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js"></script>
+    <script src="myAge.js"></script>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0" onload="run();">
+            <div id="divfather">
+                <div id="load">
+                    <div style="font-size: 45px;">G</div>
+                    <div style="font-size: 45px;">N</div>
+                    <div style="font-size: 45px;">I</div>
+                    <div style="font-size: 45px;">D</div>
+                    <div style="font-size: 45px;">A</div>
+                    <div style="font-size: 45px;">O</div>
+                    <div style="font-size: 45px;">L</div>
+              </div>
+            </div>
+    <div id="container">
+        <header class="header transparent">
+
+			<div id="inner-header" class="inner-header max-width group">
+
+				<ul class="utility">
+					<li><a href="https://www.instagram.com/subarasinan" title="Instagram" target="_blank"><span class="icon instagram fab fa-instagram"></span></a></li>
+					<li><a href="https://www.facebook.com/sinansubara" title="Facebook" target="_blank"><span class="icon facebook fab fa-facebook"></span></a></li>
+					<li><a href="https://www.linkedin.com/in/sinan-%C5%A1ubara-11a217128/" title="LinkedIn" target="_blank"><span class="icon linkdin fab fa-linkedin"></span></a></li>
+					<li><a href="https://www.twitter.com/_bosancheros" title="Twitter" target="_blank"><span class="icon twitter fab fa-twitter"></span></a></li>
+				</ul>
+
+				<div class="icon logo"><img src="Images/logoss.png" alt="Sinan Šubara" height="100px" width="150px"></div>
+
+				<nav>
+					<ul class="nav">
+                        <li><a href="index.html" class="animLink" style="color: #313131;">Početna</a></li>
+						<li><a href="omeni.html" class="animLink" style="color: #313131;">Biografija</a></li>
+                        <li><a href="slike.html" class="animLink" style="color: #313131;">Slike</a></li>
+						<li><a href="kontakt.html" class="animLink" style="color: #313131;">Kontakt</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+        <style>
+            
+            .parallax {
+                        position: relative;
+                        opacity: 0.65;
+                        background-attachment: fixed;
+                        background-position: 50% 11%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .bgimg-1 {
+                        background-image: url("Images/babogolf.jpg");
+                        min-height: 839px;
+                    }
+                    .bgimg-2 {
+                        background-image: url("Images/babokuca.jpg");
+                        min-height: 839px;
+                    }
+                    .bgimg-3 {
+                        background-image: url("Images/dalma.jpg");
+                        min-height: 839px;
+                    }
+                    .bgimg-4 {
+                        background-image: url("Images/mama.jpg");
+                        min-height: 839px;
+                    }
+                    .caption {
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                width: 100%;
+                                text-align: center;
+                                color: #000;
+                            }
+
+                    .caption span.border {
+                                background-color: #111;
+                                color: #5d5d5d;
+                                padding: 18px;
+                                font-size: 25px;
+                                letter-spacing: 10px;
+                                box-shadow: 1px 6px 24px 2px gray;
+                                cursor: pointer;
+                            }
+            </style>
+                    <div class="boxshadow photo-age" style="color: #777;background-color:white;padding:166px 310px 50px 310px;">
+                    <h3 style="text-align:center; margin-bottom: 100px; font-size:50px;">Biografija</h3>
+                    <img src="Images/dejan-16.jpg" alt="Sinan Šubara" height="450px" width="300px" style="margin-bottom: 70px; text-align: left; margin-left: 120px;" >
+                    <p id="myAge" style="text-align: left;"></p>
+                    <p style="text-align: justify;"><b>Sinan Šubara</b>, rođen je 02.06. u petak, 1995. godine, u Mostaru. Živi u Jablanici, jednom malom gradu Bosne i Hercegovine koji se nalazi uz rijeku Neretvu, gdje je i odrastao. 
+                        Odrastao je uz majku Nerminu, oca Nijaza i sestru Dalmu. Prvu ljubav prema kompjuterima je osjetio u svojoj 6. godini, 
+                        kada mu je otac kupio prvi računar, 2001. godine. U osnovnu školu je pošao sa 7 godina, tačnije 01.09.2002. godine. Košarku je počeo da trenira sa 10 godina, u klubu "Granit" Jablanica, gdje je imao veoma dobre rezultate zajedno sa svojim timom.
+                        Prvi pehar u Sarajevu sa svojim timom, je osvojio za 4 godine, u skenderiji. To je bio ne samo za njega, nego i za ostalu djecu iz Jablanice poticaj da pođu trenirat košarku.</p>
+                        
+                  </div>
+
+                    <div class="bgimg-1 parallax" style="background-position: 50% 36%;opacity: 0.9;">
+                    </div>
+                    <div class="boxshadow photo-age" style="color: #777;background-color:white;text-align:center;padding:60px 310px 60px 310px;">
+                      <p style="text-align: justify;">
+                            Kroz par godina klub se raspada zbog nesuglasica u upravi kluba, te prelazi u drugi Jablanički klub "Turbina". Klub i trener nisu bili toliko okrenuti prema budućnosti kluba, to jest, novim generacijama, i tako su došle mnoge povrede. U 8. razredu osnovne škole, napušta košarku.
+                            Završio je 8 godina osnovne škole sa odličnim uspjehom, i primjernim vladanjem. Roditelji su u toku osnovne škole primjetili tu ljubav prema kompjuterima,
+                            i tako ga upišu u "JU Srednju elektrotehničku školu" u Mostaru, smjer "Računarske tehnike i automatike", 2010. godine. Dolazeći u novu sredinu
+                            Sinan se dobro snalazi, upoznaje puno novih prijatelja i poznanika. </p>
+                    </div>
+                    
+                    
+                    
+                    <div class="bgimg-2 parallax" style="background-position: 50% 36%;opacity: 0.9;">  
+                    </div>
+                    <div style="position:relative; box-shadow: 0px 17px 47px -12px black;">
+                      <div class="photo-age" style="color:#444;background-color:white;text-align:center;padding:60px 310px 60px 310px;">
+                        <p style="text-align: justify;">
+                            2012. Godine, Sinan je imao prvo profesionalno slikanje, i za vrlo kratko vrijeme,
+                            potpisuje ugovor sa najboljom modnom agencijom na balkanu, "FOX", u Beogradu. Slikanje mu je bilo više kao hobi. Putovanja po cijelom svijetu, upoznavanja novih ljudi, novih kultura, sticanje samopouzdanja kroz sam posao, je donijelo Sinanu veliku radost.
+                            Prvu modnu reviju je imao u Međugorju 2013. godine, "Sajam vjenčanja", gdje je nosio kreacije za "Cesar's" modnu kuću.
+                            Srednju školu završava 2014. godine, kada dobija i najbolju ponudu iz svijeta modelinga, da napusti Bosnu i Hercegovinu na dvije godine, počne da živi i radi u Dubai-u.
+                            Roditelji su ga spremni bili podržat, šta god da je on izabrao, ali izabrao je školu, jer je malo razmišljao i pričao sa svojim roditeljima o tome, šta će biti kad napusti posao modela.
+                            U međuvremenu Sinan je glumio u više muzičkih spotova i reklama, a navest ćemo i neke pjevačice u čijim muzičkim spotovima se pronašao: Jelena Tomašević, Amna Keskin, i Ceca.
+                            2016. godine, Sinan je odabran da predstavlja Bosnu i Hercegovinu na svjetskom takmičenju, "Mister Universal", koji se održavao na Bali-u, Indonezija.
+                            Bio je drugo mjesto u nagradi za fotogeničnosti, prvi u glasanju publike u kojem je osvojio preko 30 hiljada glasova, i dobio diplomu za "People's Choice Award".
+                            </p>
+                      </div>
+                    </div>
+                    
+                    <div class="bgimg-3 parallax" style="background-position: 50% 27%;opacity: 0.9; ">
+                      
+                    </div>
+                    <div style="position:relative; box-shadow: 0px 18px 21px 1px black;">
+                      <div style="color:#777;background-color:white;text-align:center;padding:50px 135px;">
+                        <p style="text-align: justify;">
+                            Upisuje Fakultet Informacijskih Tehnologija, u Mostaru, gdje i danas studira. Pohađao je mnoge kurseve vezanih za kompjutersku tehniku, a onaj zadnji i najvažniji, kurs za Web Design, u Jablanici, 2018. godine, koji je finansirao 'UNDP' i Evropska unija. Kurs je trajao 6 mjeseci uz iskusnog predavača Aldina Nezirića, a tehnologije koje su rađene
+                            su mu omogućile lakše shvatanje predmeta na fakultetu Web Razvoj i Dizajn, a neke od tehnologija su(HTML5,CSS, Javascrip, JQuery, AJAX, Bootstrap, Angular, ReactJS).
+                            Sinan je postao dajo prvi put 2013. godine, a ne tako davno u 2018. godini je dobio još jednu princezu, tako da je sad "dupli dajo". Sinana iz dana u dan sve više se zanima masiranje, uči i informiše se od iskusnih masera.
+                            Uživa u hrani, u slobodno vrijeme voli da gleda filmove, i naravno veliki fan je igrica, u kojima je bio i dosta uspješan, igrao je na mnogim turnirima, gdje je zabilježio i značajne rezultate, a neke od igara su "Counter-Strike:Global Offensive" i "Dota 2".
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="bgimg-4 parallax" style="background-position: 50% 27%;opacity: 0.9;">
+                      
+                    </div>
+    </div>
+    
+    <footer class="footer aos-init" data-aos="fade-up" itemscope="">
+
+        <div id="inner-footer" class="max-width inner-footer group">
+
+            <div class="ball home-header" title="Vrati na početak"><span class="icon fas fa-arrow-circle-up" style="color:#fff; font-size: 70px;position: absolute;margin-left: 14px;margin-top: 12px;"></span></div>
+            <div class="stay-gold textshadow-footer"><span class="line"></span>SEMINARSKI RAD</div>
+            <div class="footer-nav">
+                <div class="left group" style="margin-top: 8px;">
+                    <ul class="nostyle inline">
+                            <li><a href="index.html" class="animLink textshadow-footer">Početna</a></li>
+                            <li><a href="omeni.html" class="animLink textshadow-footer">Biografija</a></li>
+                            <li><a href="slike.html" class="animLink textshadow-footer">Slike</a></li>
+                            <li><a href="kontakt.html" class="animLink textshadow-footer">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="right group" style="margin-right: 50px;">
+                    <ul class="nostyle inline">
+                            <li><a href="https://www.instagram.com/subarasinan" title="Instagram" target="_blank"><span class="icon instagram fab fa-instagram"></span></a></li>
+                            <li><a href="https://www.facebook.com/sinansubara" title="Facebook" target="_blank"><span class="icon facebook fab fa-facebook"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/sinan-%C5%A1ubara-11a217128/" title="LinkedIn" target="_blank"><span class="icon linkdin fab fa-linkedin"></span></a></li>
+                            <li><a href="https://www.twitter.com/_bosancheros" title="Twitter" target="_blank"><span class="icon twitter fab fa-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="icon logo-footer"><img title="Početna stranica" src="Images/logoss.png" title="Povratak na početnu stranicu"alt="Sinan Šubara" height="233px" width="350px" onclick="location.href='index.html';" style="cursor: pointer;"></span>
+            <div class="credit textshadow-footer">Copyright © 2018 Sinan Šubara</div>
+
+        </div>
+
+    </footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    	<script src="main.js"></script>
+</body>
+</html>
